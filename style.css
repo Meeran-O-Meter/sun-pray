@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Din Condensed';
+    src: url('./assets/din-condensed-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    background-color: #1A1A1A;
+    color: #ffffff;
+    font-family: 'Din Condensed';
+}
+
+span{
+    color: #FBC940;
+}
+
+.left-side{
+    margin-left: 3.75rem;
+}
+
+
+.title{
+    font-size: 3rem;
+    margin-top: 20vh;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.logo{
+    width: 13rem;
+    margin-top: 1.75rem;
+}
