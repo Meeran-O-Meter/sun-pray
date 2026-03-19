@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'DinCondensedBold';
+    src: url('./assets/din-condensed-bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     background-color: #1A1A1A;
     color: #ffffff;
@@ -28,14 +35,14 @@ span{
 
 
 .title{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 20vh;
     width: 100%;
     margin-bottom: 0;
 }
 
 .logo{
-    width: 13rem;
+    width: 15rem;
     margin-top: 1.75rem;
 }
 
@@ -79,11 +86,91 @@ span{
 .check-prayer-time{
     background-color: #FBC940;
     color: #000000;
-    padding: 1rem 0;
+    padding: 1rem;
     border: none;
     border-radius: 8px;
-    width: 100%;
+    width: 80%;
+    font-weight: 600;
     font-size: 1.3rem;
     margin-top: 4rem;
+    font-family: 'DinCondensedBold';
+
+    a{
+        font-family: 'DinCondensedBold';
+        background-color: #FBC940;
+        color: #1E1E1E;
+        padding: 1rem 0;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        font-size:1.6rem;
+        margin-top: 4rem;
+        text-decoration: none;
+    }
+}
+
+.check-prayer-time:hover{
+    cursor: pointer;
+}
+
+.title-2{
+    font-size: 2.8rem;
+    margin-top: 20vh;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.details{
+    border: #FBC940 1.5px solid;
+    border-radius: 8px;
+    color: #FBC940;
+    font-size: 1.4rem;
+}
+
+.right-side-2{
+    margin-left: 3%;
+    width: 35%;
+}
+
+#dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.6rem;
+    width: 100%;
+    border: #FBC940 1.5px solid;
+    border-radius: 8px;
+    height: 4rem;
+    color: #FBC940;
+    font-size: 1.4rem;
+    padding: 1rem;
+    cursor: pointer;
+
+    select{
+        background: url('./assets/chevron.png') center no-repeat;
+    }
+    }
+
+.details-title{
+    font-size: 2rem;
+    color: #FBC940;
+    margin: 0;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.details{
+    margin-top: 2rem;
+}
+
+.details-info{
+    padding: 0;
+    margin: 0;
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+    color: #FBC940;
+    font-size: 1.4rem;
 }
 
