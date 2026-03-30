@@ -47,6 +47,11 @@ function showPosition(position){
       console.log(data);
         console.log(data.data.timings.Fajr);
         document.getElementById("fajr").innerHTML = data.data.timings.Fajr;
+        document.getElementById("sunrise").innerHTML = data.data.timings.Sunrise;
+        document.getElementById("zhur").innerHTML = data.data.timings.Dhuhr;
+        document.getElementById("asr").innerHTML = data.data.timings.Asr;
+        document.getElementById("maghrib").innerHTML = data.data.timings.Maghrib;
+        document.getElementById("esha").innerHTML = data.data.timings.Isha;
     })
     .catch(error => {
       console.error(error)
