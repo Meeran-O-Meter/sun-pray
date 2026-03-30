@@ -164,4 +164,63 @@ span{
     cursor: pointer;
 }
 
+.both{
+    display: flex;
+    gap: 8rem;
+}
 
+.prayer-container{
+    width: 40%;
+    text-align: center;
+    background-color: #262626;
+    border-radius: 8px;
+    padding: 2rem;
+    padding-top: 2rem;
+    border: none;
+    margin-top: 20vh;
+}
+
+.prayer-times-day{
+    margin-top: 1rem;
+    font-size: 2.3rem;
+    background-color: transparent;
+
+    span {
+        color: #FBC940;
+        background-color: transparent;
+    }
+}
+
+.time-container{
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border-radius: 8px;
+    border: #FBC940 2px solid;
+    padding-top: 0;
+}
+
+
+.prayer-title{
+    background-color: transparent;
+    line-height: 100%;
+    padding: 0.3rem;
+    margin: 0;
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    color: #FBC940;
+
+}
+
+.time{
+    color: #FBC940;
+    background-color: transparent;
+    font-size: 2rem;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    margin: 0.5rem 0;
+}

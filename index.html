@@ -36,36 +36,70 @@
     </div>
 
 <section id="prayer-times">
-    <div class="right-side-2">
-        <p class="title-2">
-            Your current <span>prayer times</span>
-        </p>
+    <div class="both">
+        <div class="right-side-2">
+            <p class="title-2">
+                Your current <span>prayer times</span>
+            </p>
 
-        <select id="dropdown" name="calculation-method">
-            <option value="" disabled selected hidden>Calculation Method</option>
-            <option value="ISNA">ISNA</option>
-            <option value="Muslim World League">Muslim World League</option>
-            <option value="Umm Al-Qura, Makkah">Umm Al-Qura, Makkah</option>
-            <option value="Egyptian National Authority of Survey">Egyptian National Authority of Survey</option>
-            <option value="University of Islamic Sciences, Karachi">University of Islamic Sciences, Karachi</option>
-            <option value="Kuwait">Kuwait</option>
-            <option value="Qatar">Qatar</option>
-            <option value="Singapore">Singapore</option>
-        </select>
+            <select id="dropdown" name="calculation-method">
+                <option value="" disabled selected hidden>Calculation Method</option>
+                <option value="ISNA">ISNA</option>
+                <option value="Muslim World League">Muslim World League</option>
+                <option value="Umm Al-Qura, Makkah">Umm Al-Qura, Makkah</option>
+                <option value="Egyptian National Authority of Survey">Egyptian National Authority of Survey</option>
+                <option value="University of Islamic Sciences, Karachi">University of Islamic Sciences, Karachi</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Singapore">Singapore</option>
+            </select>
 
-        <select id="school" name="school">
-            <option value="shafi">Standard (Shafi, Hanafi, Maliki)</option>
-            <option value="hanafi">Hanafi</option>
-        </select>
+            <select id="school" name="school">
+                <option value="shafi">Standard (Shafi, Hanafi, Maliki)</option>
+                <option value="hanafi">Hanafi</option>
+            </select>
 
-        <button id="get-prayer-times-button" style="width: 100%; margin-top: 0;" class="check-prayer-time">     
-            <a id="get-prayer-times-button">
-                CHECK MY PRAYER TIMES
-            </a>
-        </button>
-<p id="fajr-time"></p>
+            <button id="get-prayer-times-button" style="width: 100%; margin-top: 0;" class="check-prayer-time">     
+                <a id="get-prayer-times-button">
+                    CHECK MY PRAYER TIMES
+                </a>
+            </button>
+        </div>
+
+        <div class="prayer-container">
+                <p class="prayer-times-day">YOUR <span>PRAYER TIMES</span> FOR THE DAY</p>
+
+                <div class="time-container">
+                    <p class="prayer-title">FAJR</p>
+                    <p id="fajr" class="time">s</p>
+                </div>
+
+                <div class="time-container">
+                    <p class="prayer-title">SUNRISE</p>
+                    <p id="sunrise" class="time"></p>
+                </div>
+
+                <div class="time-container">
+                    <p class="prayer-title">ZHUR</p>
+                    <p id="zhur" class="time"></p>
+                </div>
+
+                <div class="time-container">
+                    <p class="prayer-title">ASR</p>
+                    <p id="asr" class="time"></p>
+                </div>
+
+                <div class="time-container">
+                    <p class="prayer-title">MAGHRIB</p>
+                    <p id="maghrib" class="time"></p>
+                </div>
+
+                <div class="time-container">
+                    <p class="prayer-title">ESHA</p>
+                    <p id="esha" class="time"></p>
+                </div>
+        </div>
     </div>
-
 
 </section>
 

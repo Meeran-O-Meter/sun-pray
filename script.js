@@ -46,6 +46,7 @@ function showPosition(position){
     .then(data => {
       console.log(data);
         console.log(data.data.timings.Fajr);
+        document.getElementById("fajr").innerHTML = data.data.timings.Fajr;
     })
     .catch(error => {
       console.error(error)
