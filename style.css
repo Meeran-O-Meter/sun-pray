@@ -226,3 +226,11 @@ span{
     margin: 0;
     margin: 0.5rem 0;
 }
+
+.loading{
+    display: none;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FBC940;
+
+}

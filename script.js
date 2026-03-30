@@ -24,6 +24,7 @@ window.addEventListener("load", () => {
 const button = document.getElementById("get-prayer-times-button")
 const schoolelement= document.getElementById("school").value
 const apiKey = 'TTj9qlosRdL3qz6GPfU21C50LpwDhbqW7STn41FIMxpcKzxF'
+const loader = document.getElementById("loading");
 
 
 button.addEventListener('click', function() {
@@ -43,12 +44,17 @@ function getMethod(){
 }
 
 function getLocation(){
+  showLoader()
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   }
   else{
     alert("Sorry, this browser doesn't support geolocation!");
   }
+}
+function showLoader(){
+  loader.style.display = "block"
+
 }
 
 function showPosition(position) {
@@ -71,6 +77,10 @@ function showPosition(position) {
 
     .catch(error => {
       console.error(error)
+    })
+
+    .finally(() => {
+      loader.style.display = "none";
     })
 
 };
