@@ -109,6 +109,31 @@ span{
     }
 }
 
+.check-prayer-time-2{
+    width: 100%;
+    margin-top: 0;
+    background-color: #FBC940;
+    color: #000000;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: 'DinCondensedBold';
+
+    a{
+        font-family: 'DinCondensedBold';
+        background-color: #FBC940;
+        color: #1E1E1E;
+        padding: 1rem 0;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        font-size:1.6rem;
+        margin-top: 4rem;
+        text-decoration: none;
+    }
+}
 .check-prayer-time:hover{
     cursor: pointer;
 }

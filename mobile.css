@@ -76,6 +76,7 @@
     display: block;
     margin: auto;
     margin-top: 2rem;
+    margin-bottom: 20vh;
 
     a{
         background-color: transparent;
@@ -85,4 +86,115 @@
         font-weight: bold;
     }
 
+}
+
+.title-2{
+    margin-left: 5vw;
+    font-size: 12vw;
+    width: 90%;
+
+    span{
+        color: #FBC940;
+    }
+}
+
+#dropdown{
+    border: solid 2px #FBC940;
+    border-radius: 8px;
+    padding: 2vh;
+    width: 90%;
+    display: block;
+    margin: auto;
+    font-size: 1.3rem;
+    color: #FBC940;
+    appearance: none;
+    margin-bottom: 3vh;
+}
+
+#school{
+    border: solid 2px #FBC940;
+    border-radius: 8px;
+    padding: 2vh;
+    width: 90%;
+    display: block;
+    margin: auto;
+    font-size: 1.3rem;
+    color: #FBC940;
+    appearance: none;
+    margin-bottom: 3vh;
+}
+
+.check-prayer-time-2{
+    padding: 0.5rem 0rem;
+    display: block;
+    margin: auto;
+    background-color: #FBC940;
+    border-radius: 8px;
+    border: none;
+    padding: 2vh;
+    width: 90%;
+    margin-bottom: 5vh;
+
+    a{
+        background-color: transparent;
+        color: #1A1A1A;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
+
+.loading{
+    font-size: 1.3rem;
+    text-align: center;
+    color: #FBC940;
+    margin-top: 2rem;
+    display: none;
+}
+
+.prayer-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #262626;
+    padding: 2vh;
+}       
+
+.prayer-times-day{
+    font-size: 10vw;
+    text-align: center;
+    background-color: transparent;
+    color: #FFFFFF;
+
+    span{
+        color: #FBC940;
+        background-color: transparent;
+    }
+}
+
+.time-container{
+    background-color: transparent;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: solid 2px #FBC940;
+    border-radius: 8px;
+    margin-bottom: 2vh;
+}
+
+.prayer-title{
+    color: #FBC940;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+
+}
+
+.time{
+    color: #FBC940;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
 }
