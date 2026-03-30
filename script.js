@@ -20,6 +20,7 @@ window.addEventListener("load", () => {
     }
 });
 
+alert("Please enable your location :)")
 
 const button = document.getElementById("get-prayer-times-button")
 const schoolelement= document.getElementById("school").value
