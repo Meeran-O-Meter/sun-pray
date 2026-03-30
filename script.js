@@ -21,36 +21,36 @@ window.addEventListener("load", () => {
 });
 
 
-function getLocation() {
+const button = document.getElementById("get-prayer-times-button")
+const calculationMethod = document.getElementById("dropdown").value
+const schoolelement= document.getElementById("school").value
+const apiKey = 'TTj9qlosRdL3qz6GPfU21C50LpwDhbqW7STn41FIMxpcKzxF'
+const method = '3';
+const school = '1';
 
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
-        alert("This browser doesn't support geolocation :(");
-    }
-}
-
-function showPosition() {
-    const latidude = position.coords.latidude;
-    const longitude = navigator.getLocation;
-    
-    document.getElementById("address").innerHTML = longitude + latidude;
-    console.log("Latitude: " + latidude + ", Longitude: " + longitude);
-}
-
-function showError(error) {
-  switch(error.code) {
-    case error.PERMISSION_DENIED:
-      alert("User denied the request for Geolocation.");
-      break;
-    case error.POSITION_UNAVAILABLE:
-      alert("Location information is unavailable.");
-      break;
-    case error.TIMEOUT:
-      alert("The request to get user location timed out.");
-      break;
-    case error.UNKNOWN_ERROR:
-      alert("An unknown error occurred.");
-      break;
+function getLocation(){
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  }
+  else{
+    alert("Sorry, this browser doesn't support geolocation!");
   }
 }
+
+function showPosition(position){
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  const url = `https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=${schoolelement}`
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+        console.log(data.data.timings.Fajr);
+    })
+    .catch(error => {
+      console.error(error)
+    })
+
+};
+
+getLocation()

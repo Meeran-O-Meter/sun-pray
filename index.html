@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
     <title>SunPray</title>
 </head>
 <body>
@@ -54,23 +53,22 @@
             <option value="Singapore">Singapore</option>
         </select>
 
-        <button style="width: 100%; margin-top: 0;" class="check-prayer-time">     
-            <a>
+        <select id="school" name="school">
+            <option value="shafi">Standard (Shafi, Hanafi, Maliki)</option>
+            <option value="hanafi">Hanafi</option>
+        </select>
+
+        <button id="get-prayer-times-button" style="width: 100%; margin-top: 0;" class="check-prayer-time">     
+            <a id="get-prayer-times-button">
                 CHECK MY PRAYER TIMES
             </a>
         </button>
-
-        <div class="details">
-            <p class="details-title">DETAILS</p>
-            <p id="address" class="details-info"></p>
-            <p id="date" class="details-info"></p>
-            <p id="time-zone" class="details-info"></p>
-            <p id="calculation-method" class="details-info"></p>
-        </div>
-
-
+<p id="fajr-time"></p>
     </div>
 
+
 </section>
+
+<script src="./script.js"></script>
 </body>
 </html>

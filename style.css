@@ -146,31 +146,22 @@ span{
     font-size: 1.4rem;
     padding: 1rem;
     cursor: pointer;
+}
 
-    select{
-        background: url('./assets/chevron.png') center no-repeat;
-    }
-    }
-
-.details-title{
-    font-size: 2rem;
-    color: #FBC940;
-    margin: 0;
-    text-align: center;
-    margin-top: 1rem;
+#school {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.3em;
     margin-bottom: 2rem;
-}
-
-.details{
-    margin-top: 2rem;
-}
-
-.details-info{
-    padding: 0;
-    margin: 0;
-    margin-left: 2rem;
-    margin-top: 0.2rem;
+    width: 100%;
+    border: #FBC940 1.5px solid;
+    border-radius: 8px;
+    height: 4rem;
     color: #FBC940;
     font-size: 1.4rem;
+    padding: 1rem;
+    cursor: pointer;
 }
+
 
