@@ -22,14 +22,25 @@ window.addEventListener("load", () => {
 
 
 const button = document.getElementById("get-prayer-times-button")
-const dropdown = document.getElementById("dropdown").value
-
 const schoolelement= document.getElementById("school").value
 const apiKey = 'TTj9qlosRdL3qz6GPfU21C50LpwDhbqW7STn41FIMxpcKzxF'
 
+
 button.addEventListener('click', function() {
+  getMethod()
+  getSchool()
   getLocation()
 });
+
+function getSchool(){
+  const school = document.getElementById("school");
+  schoolValue = school.value;
+}
+
+function getMethod(){
+  const dropdown = document.getElementById("dropdown");
+  value = dropdown.value;
+}
 
 function getLocation(){
   if (navigator.geolocation) {
@@ -43,7 +54,7 @@ function getLocation(){
 function showPosition(position) {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
-  const url = `https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=${dropdown}`
+  const url = `https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=${value}&school=${schoolValue}`
   fetch(url)
     .then(response => response.json())
     .then(data => {

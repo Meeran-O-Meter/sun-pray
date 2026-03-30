@@ -146,6 +146,7 @@ span{
     font-size: 1.4rem;
     padding: 1rem;
     cursor: pointer;
+    appearance: none;
 }
 
 #school {
@@ -162,6 +163,7 @@ span{
     font-size: 1.4rem;
     padding: 1rem;
     cursor: pointer;
+    appearance: none;
 }
 
 .both{
