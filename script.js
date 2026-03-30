@@ -22,11 +22,14 @@ window.addEventListener("load", () => {
 
 
 const button = document.getElementById("get-prayer-times-button")
-const calculationMethod = document.getElementById("dropdown").value
+const dropdown = document.getElementById("dropdown").value
+
 const schoolelement= document.getElementById("school").value
 const apiKey = 'TTj9qlosRdL3qz6GPfU21C50LpwDhbqW7STn41FIMxpcKzxF'
-const method = '3';
-const school = '1';
+
+button.addEventListener('click', function() {
+  getLocation()
+});
 
 function getLocation(){
   if (navigator.geolocation) {
@@ -37,15 +40,16 @@ function getLocation(){
   }
 }
 
-function showPosition(position){
+function showPosition(position) {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
-  const url = `https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=${schoolelement}`
+  const url = `https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=${dropdown}`
   fetch(url)
     .then(response => response.json())
     .then(data => {
       console.log(data);
         console.log(data.data.timings.Fajr);
+        console.log(dropdown)
         document.getElementById("fajr").innerHTML = data.data.timings.Fajr;
         document.getElementById("sunrise").innerHTML = data.data.timings.Sunrise;
         document.getElementById("zhur").innerHTML = data.data.timings.Dhuhr;
@@ -53,10 +57,9 @@ function showPosition(position){
         document.getElementById("maghrib").innerHTML = data.data.timings.Maghrib;
         document.getElementById("esha").innerHTML = data.data.timings.Isha;
     })
+
     .catch(error => {
       console.error(error)
     })
 
 };
-
-getLocation()
